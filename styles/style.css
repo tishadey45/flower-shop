@@ -17,20 +17,43 @@ button{
     border-radius: 10px;
     background: crimson;
     color: aliceblue;
-    border: none;
+    border: 1px solid green;
     font-size: 15px;
-    padding: 15px,28px;
+    padding: 15px 28px;
+    cursor: pointer;
+    box-shadow: red
+
+    /* transition: all 1s; */
+}
+button:hover{
+    background: tomato;
+    border: none;
+    box-shadow: none;
 }
 
-}
 
-header{
-    background-color:rgba(229,84,115,0,10) ;
+header,#hot-deal{
+    background-color:rgba(229,84,115,0,1) ;
 }
 .container{
     width: 75%;
     max-width: 1440px;
     margin: 0 auto;
+}
+.section-heading{
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+.section-heading h2{
+    color: #272727;
+    text-align: center;
+    font-family: lato;
+    font-size:40px ;
+    font-style: normal;
+    font-weight:600 ;
+    line-height: normal;
+    margin-bottom: 16px;
 }
 .banner{
     display: flex;
@@ -53,4 +76,100 @@ header{
 .banner .banner-img img{
     width: 150px;
     vertical-align: middle;
+}
+#featured{
+    padding: 100px 0;
+}
+.section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:end ;
+    gap: 20px;
+}
+.section-content .flower .flower-img{
+    background: plum;
+    border-radius: 300px 300px 0px 0px;
+    padding: 30px 15px 0;
+    height: 500px;
+    display: flex;align-items:end;
+
+}
+.section-content .flower .flower-img img{
+    width:normal;
+}
+.section-content .flower .pink{
+
+}
+.section-content .flower .blue{
+    background: cornflowerblue;
+}
+.section-content .flower .green{
+    background: darkseagreen;
+}
+.section-content .flower p{
+    color: #272727;
+    text-align: center;
+    font-family: lato;
+    font-size:24px ;
+    font-style: normal;
+    font-weight:700 ;
+    line-height:35px ;
+    margin-top: 16px;
+    text-decoration-line: underline;
+}
+
+.hot-deal-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+#hot-deal .hot-deal-text{
+    width:75% ;
+    max-width: 550px;
+    text-align: center;
+}
+#hot-deal .hot-deal-text *{
+    margin-bottom: 24px;
+    
+
+}
+#hot-deal .hot-deal-text h2{
+    color: #272727;
+    text-align: center;
+    font-size:normal;
+    font-family:lato;
+    font-weight: 400px;
+    font-style: normal ;
+    line-height: normall;
+    
+}
+#hot-deal .hot-deal-img{
+    max-width: 318px;
+
+}
+#hot-deal .hot-deal-text h2 .importent{
+    color: #E55473;
+
+}
+#newsletter{
+    margin: 128px;
+}
+.newsletter-main{
+    background-image: url('../images/newsletter-bg.png');
+    padding: 122px 0;
+}
+#newsletter form{
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+#newsletter form input{
+    flex-grow: 1;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none
 }
